@@ -289,10 +289,8 @@ function renderProfiles(profiles) {
     const openBtn = document.createElement("button");
     openBtn.textContent = "Open";
     openBtn.onclick = () => {
-      // Store only the current profile data temporarily
       localStorage.setItem("current_profile_url", url);
       localStorage.setItem("current_profile_avatar", avatarSrc);
-      localStorage.setItem("current_profile_username", username);
       window.location.href = "items.html";
     };
 
